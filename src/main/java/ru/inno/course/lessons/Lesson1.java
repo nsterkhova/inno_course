@@ -1,4 +1,4 @@
-package ru.inno.course;
+package ru.inno.course.lessons;
 
 public class Lesson1 {
     public static void main(String[] args) {

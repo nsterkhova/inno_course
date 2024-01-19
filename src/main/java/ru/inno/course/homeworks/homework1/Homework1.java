@@ -1,4 +1,4 @@
-package ru.inno.course;
+package ru.inno.course.homeworks.homework1;
 
 public class Homework1 {
     public static void main(String[] args) {
@@ -73,5 +73,9 @@ public class Homework1 {
 //        .trim() возвращает копию исходной строки с пропущенными начальными и конечными пробелами.
         String trimStr = myStr.trim();
         System.out.println("The result of .trim method: " + "\"" + trimStr + "\"");
+
+//        .equals() сравнивает соответствет ли исходная строка заданной
+        boolean equalsResult = myStr.equals(" Строка из 24 символов. ");
+        System.out.println("The result of .equals method: " + "\"" + equalsResult + "\"");
     }
 }
