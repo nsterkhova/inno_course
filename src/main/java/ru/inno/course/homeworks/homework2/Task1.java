@@ -1,6 +1,6 @@
 package ru.inno.course.homeworks.homework2;
 
-public class Homework2_Task1 {
+public class Task1 {
     public static void main(String[] args) {
         String panVisa = "4421956555352810";
         String panAmEx = "3737 3737 3737 374";
