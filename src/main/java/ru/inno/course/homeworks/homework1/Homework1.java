@@ -11,13 +11,13 @@ public class Homework1 {
         int myStrLength = myStr.length();
         System.out.println("The length of myStr is: " + myStrLength);
 
-//        .isEmpty() проверяет является ли строка пустой или содержит значение null.
+//        .isEmpty() возвращает true, если длина строки = 0.
         boolean myStrEmpty = myStr.isEmpty();
         System.out.println("Is myStr empty? " + myStrEmpty);
         boolean emptyStrEmpty = emptyStr.isEmpty();
         System.out.println("Is emptyStr empty? " + emptyStrEmpty);
 
-//        .isBlank() проверяет является ли строка whitespace, пустотой или null'ом.
+//        .isBlank() возвращает true, если строка пустая или содержит только whitespace'ы.
 //        A character is a Java whitespace character if and only if it satisfies one of the following criteria: https://docs.oracle.com/javase/6/docs/api/java/lang/Character.html?is-external=true#isWhitespace(char)
         boolean myStrBlank = myStr.isBlank();
         System.out.println("Is myStr blank? " + myStrBlank);
