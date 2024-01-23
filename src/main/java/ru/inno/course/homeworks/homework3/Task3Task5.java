@@ -11,5 +11,4 @@ public class Task3Task5 {
             System.out.println(currentMovie.year + " " + currentMovie.name + " " + currentMovie.genre + " " + currentMovie.rating);
         }
     }
-
 }

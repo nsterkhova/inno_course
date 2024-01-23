@@ -2,7 +2,6 @@ package ru.inno.course.homeworks.homework3;
 
 public class Task1 {
     public static void main(String[] args) {
-
         String[] todoList = new String[5];
         todoList[0] = " - Проснуться в 7:30";
         todoList[1] = " - Умыться";

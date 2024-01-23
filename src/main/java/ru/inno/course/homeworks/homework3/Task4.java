@@ -5,6 +5,5 @@ public class Task4 {
         for (int i = 1; i <= 1000000000; i++) {
             System.out.println(i);
         }
-
     }
 }
