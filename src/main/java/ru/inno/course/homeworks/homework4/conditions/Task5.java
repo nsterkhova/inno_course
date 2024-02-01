@@ -10,12 +10,12 @@ public class Task5 {
         boolean hasGoodLength = password.length() >= 8;
         boolean hasDigit = false;
         boolean hasSpecSymbol = false;
-        String specSymbol= "!@#$%^&*№";
+        String specSymbol = "!@#$%^&*№";
         for (char symb : password.toCharArray()) {
             if (Character.isDigit(symb)) {
                 hasDigit = true;
             } else if (specSymbol.contains(Character.toString(symb))) {
-                hasSpecSymbol=true;
+                hasSpecSymbol = true;
             }
             if (hasDigit && hasSpecSymbol && hasGoodLength) {
                 System.out.println("Пароль принят");
