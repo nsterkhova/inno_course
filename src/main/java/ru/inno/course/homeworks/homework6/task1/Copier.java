@@ -1,6 +1,5 @@
 package ru.inno.course.homeworks.homework6.task1;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.*;
 import java.util.List;
