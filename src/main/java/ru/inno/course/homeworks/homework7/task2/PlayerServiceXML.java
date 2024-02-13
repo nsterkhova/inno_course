@@ -8,7 +8,6 @@ import org.glassfish.jaxb.runtime.api.JAXBRIContext;
 import ru.inno.course.homeworks.homework7.task1.Player;
 import ru.inno.course.homeworks.homework7.task1.PlayersCollection;
 
-import java.io.IOException;
 import java.nio.file.Path;
 import java.util.*;
 
@@ -25,7 +24,7 @@ public class PlayerServiceXML implements IPlayerService {
 
 
     @Override
-    public Player getPlayerById(int id) throws IOException, JAXBException {
+    public Player getPlayerById(int id) throws JAXBException {
         PlayersCollection playersCollection = readFromXml();
         List<Player> players = playersCollection.getPlayersList();
         if (players != null) {
@@ -36,7 +35,7 @@ public class PlayerServiceXML implements IPlayerService {
     }
 
     @Override
-    public Collection<Player> getPlayers() throws IOException, JAXBException {
+    public Collection<Player> getPlayers() throws JAXBException {
         PlayersCollection playersCollection = readFromXml();
         return playersCollection.getPlayersList();
     }
@@ -62,7 +61,7 @@ public class PlayerServiceXML implements IPlayerService {
     }
 
     @Override
-    public Player deletePlayer(int id) throws IOException, JAXBException {
+    public Player deletePlayer(int id) throws JAXBException {
         PlayersCollection playersCollection = readFromXml();
         List<Player> players = playersCollection.getPlayersList();
         if (players != null) {
@@ -79,7 +78,7 @@ public class PlayerServiceXML implements IPlayerService {
     }
 
     @Override
-    public int addPoints(int playerId, int points) throws IOException, JAXBException {
+    public int addPoints(int playerId, int points) throws JAXBException {
         PlayersCollection playersCollection = readFromXml();
         List<Player> players = playersCollection.getPlayersList();
         if (players != null) {

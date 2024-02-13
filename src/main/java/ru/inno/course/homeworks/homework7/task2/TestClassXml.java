@@ -11,7 +11,9 @@ public class TestClassXml {
         IPlayerService service = new ru.inno.course.homeworks.homework7.task2.PlayerServiceXML();
 
         int playerId = service.createPlayer("WinMaster_777");
+        System.out.println(playerId);
         playerId = service.createPlayer("cool_girl_2009");
+        System.out.println(playerId);
 
         //Вывод списка игроков после создания
         System.out.println("\nСписок игроков: ");
