@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class WateringSchedule {
     HumiditySensor humidity = new HumiditySensor();
     public LocalDate nextWateringDate (LocalDate lastWateringDate){
-        Seasons season = checkSeason(lastWateringDate);
+        Seasons season = checkSeason();
         LocalDate nextWateringDate = null;
         LocalDate today = LocalDate.now();
 
@@ -14,7 +14,7 @@ public class WateringSchedule {
             case SPRING, AUTUMN -> nextWateringDate = lastWateringDate.plusWeeks(1);
             case SUMMER -> {
                 double currentHumidity = humidity.Humidity();
-                System.out.println(currentHumidity);
+                System.out.println("Текущая влажность:" + currentHumidity);
                 if (currentHumidity < 30) {
                     nextWateringDate = lastWateringDate.plusDays(2);
                 } else {
@@ -31,8 +31,8 @@ public class WateringSchedule {
 
     }
 
-    private Seasons checkSeason (LocalDate lastWateringDate){
-        int month = lastWateringDate.getMonthValue();
+    private Seasons checkSeason (){
+        int month = LocalDate.now().getMonthValue();
         return switch (month) {
             case 1, 2, 12 -> Seasons.WINTER;
             case 3, 4, 5 -> Seasons.SPRING;
